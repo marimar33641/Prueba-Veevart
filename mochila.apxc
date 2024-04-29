@@ -1,0 +1,27 @@
+List<Integer> tab = new List<Integer>();
+List<List<Integer>> items_taken = new List<List<Integer>>();
+List<List<Integer>> wb = new List<List<Integer>>();
+wb.add(new List<Integer>{2, 3});
+wb.add(new List<Integer>{3, 4});
+wb.add(new List<Integer>{4, 5});
+wb.add(new List<Integer>{5, 6});
+
+Integer M = 8;
+Integer N = 4;
+for(Integer i = 1; i <= M+1; i++) {
+    tab.add(0);
+    items_taken.add(new List<Integer>());
+}
+for(Integer n = 1; n <= 4; n = n+1){
+    for(Integer m = 8; m > 0; m = m-1){
+        if (m - wb.get(n - 1).get(0) >= 0){
+            Integer new_val = tab.get(m - wb.get(n - 1).get(0)) + wb.get(n - 1).get(1);
+            if (new_val > tab.get(m)){
+                tab.set(m, new_val);
+                List<Integer> items = new List<Integer>();
+                items_taken.set(m, items_taken.get(m-wb.get(n-1).get(0)));    
+            }
+        }
+    }
+}
+system.debug('Valor maximo: '+ tab[M]);
