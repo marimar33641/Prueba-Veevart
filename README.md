@@ -8,9 +8,9 @@ Para esto se tiene que tener en cuenta dos cosas, si se agrega peso o no a la mo
 ## Ejercicio de la mochila. Programa: mochila.apxc
 Implementado en apex.
 
-##Ejercicio del ascensor. Programa: ascensor.py
+## Ejercicio del ascensor. Programa: ascensor.py
 Documentado en el mismo code. Con el funcionamiento que dice en el doc.
 
-##Ejercicio del ascensor (Bonus: The user requests the elevator) Programa: ascensor2.py
+## Ejercicio del ascensor (Bonus: The user requests the elevator) Programa: ascensor2.py
 Documentado en el mismo code.
 El usuario puede ingresar al piso al que desea siempre que pasa por un piso. Por ejemplo, si un usuario entra en el piso 6, le pregunta a que piso desea ir (Como funciona en la vida real).
